@@ -98,6 +98,20 @@
          
         }
         
+        .video-responsive{
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+        }
+        .video-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+        
         .iframe {
             opacity: 1;
             transition: .5s ease;
@@ -279,7 +293,9 @@
             </div>
             <div class="columnbelow">
                 <div class="polaroid">
-                    <iframe class="responsive" controls src="https://youtu.be/8CW1M_0HAvs" autoplay muted loop></iframe>
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/8CW1M_0HAvs"></iframe>
+                    </div>
                     <div class="container">
                     <p>2019 Nightmare Before Christmas alternate scene storyboard animatic</p>
                     </div>
@@ -313,7 +329,9 @@
             </div>
             <div class="columnbelow">
                 <div class="polaroid">
-                    <iframe class="responsive" controls src="https://youtu.be/XNtkroY13yc" autoplay muted loop></iframe>
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/XNtkroY13yc"></iframe>
+                    </div>
                     <div class="container">
                     <p>2017 Short Film</p>
                     </div>
@@ -321,7 +339,9 @@
             </div>
             <div class="columnbelow">
                 <div class="polaroid">
-                    <iframe class="responsive" controls src="https://youtu.be/YF5YHcD7Ghw" autoplay loop></iframe>
+                    <div class="video-responsive">
+                        <iframe src="https://www.youtube.com/embed/YF5YHcD7Ghw"></iframe>
+                    </div> 
                     <div class="container">
                     <p>2017 48HOURS One Time Films team film</p>
                     </div>
