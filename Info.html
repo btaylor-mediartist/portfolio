@@ -22,7 +22,11 @@
         .contactheading {
             
             font-size: 7vw;
-            margin: 18;
+            position: absolute;
+            margin: 0px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
 
         }
         
@@ -30,17 +34,13 @@
             font-size: 3vw;
             color: black;
             margin: 0;
+            margin-top: 4vw;
+            position: absolute;
+          top: 50%;
+          left: 80%;
+          transform: translate(-50%, -50%);
         }
         
-        .alignleft {
-            text-align: left;
-            font-size: 30px;
-            line-height: 35px;
-            padding-bottom: 0px;
-            padding-left: 150px;
-            margin: 0px;
-            color: white;
-        }
         
             
         div.header {
@@ -70,7 +70,7 @@
             }
 
             a:active {
-              color: darkblue;
+              color: #008B8B;
               background-color: transparent;
               text-decoration: underline;
             }
@@ -86,7 +86,8 @@
         .box {
             
             position: relative;
-            display: inline-block;
+            color: black;
+            text-align: center;
         }
         
         .box .text {
@@ -130,27 +131,19 @@
           font-size: 20px;
           /*line-height: 35px;*/
           margin: 0px;
-          padding-top: 30;
+          padding-top: 2vw;
+            padding-bottom: 0px;
             
             
-        }
-
-        
-        .alignleft {
-            text-align: left;
-            font-size: 3vw;
-            line-height: 20px;
-            padding: 10px;
-            margin: 0px;
-            color: white;
         }
         
         .subheadingemail {
             font-size: 1.5vw;
             color: white;
-            margin-top: 15;
-            margin-bottom: 0;
-            padding-right: 10;
+            margin: 0px;
+            margin-top: 2.2vw;
+            padding: 0px;
+            padding-right: 0.3vw;;
             text-align: right;
             
         }
@@ -168,7 +161,54 @@
           color: white;
 
             }
+        .alignleft {
+            text-align: left;
+            font-size: 45;
+            padding-left: 0.1vw;
+            padding-top: 0.1vw;
+            padding-bottom: 0px;
+            padding-right: 3vw;
+            margin: 0px;
+            color: white;
+        }
         
+        .alignleft2 {
+            text-align: left;
+            font-size: 45;
+            margin: 0px;
+            padding: 1vw;
+            padding-left: 0.1vw;
+            padding-bottom: 0px;
+            padding-right: 3vw;
+            color: white;
+        }
+        .column3 {
+          float: left;
+          width: 50%;
+          padding: 0px;
+            margin: 0px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row3::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .column4 {
+          float: left;
+          width: 100%;
+          padding: 0px;
+            margin: 0px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row4::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
     </style>
     
 </head>
@@ -184,7 +224,7 @@
                         <p class="alignleft">BONNIE</p>
                     </div>
                     <div class="column">
-                        <p class="headerlinks"><a href="Info.html">INFO </a>
+                        <p class="headerlinks"><a href="Info.html" style="color:#008b8b">INFO </a>
                     </div>
                     <div class="column">
                         <p class="headerlinks"><a href="mywork.html">MY WORK</a></p>
@@ -196,20 +236,11 @@
                         <p class="headerlinks"><a href="future.html">FUTURE</a></p> 
                     </div>   
                 </div>  
-                <div class="row">
-                    <div class="column">
-                        <p class="alignleft">TAYLOR</p>
+                <div class="row3">
+                    <div class="column3">
+                        <p class="alignleft2">TAYLOR</p>
                     </div>  
-                    <div class="column">
-                        <p class="blank">taylorbonnie.m@gmail.com</p>
-                    </div>
-                    <div class="column">
-                        <p class="blank">taylorbonnie.m@gmail.com</p>
-                    </div>
-                    <div class="column">
-                        <p class="blank">taylorbonnie.m@gmail.com</p>
-                    </div>
-                    <div class="column">
+                    <div class="column3">
                         <p class="subheadingemail">taylorbonnie.m@gmail.com</p>
                     </div>
                 </div>
@@ -232,19 +263,36 @@
         </div>    
         
         <div class="box">
-            <img src="Backing_Stillsmaller.png" alt="Space Background" class="responsive">
-            <div class="text">
-                <p class="contactheading"><b>CONTACT ME:</b></p>
-                <p class="subemail">taylorbonnie.m@gmail.com</p>
+            
+            <div class="row3">
+                
+                <div class="column4">
+                    <img src="Backing_Stillsmaller.png" alt="Space Background" class="responsive">
+                </div>
+                <div class="column3">
+                    
+                    <p class="contactheading"><b>CONTACT ME:</b></p>
+                </div>
+                <div class="column3">
+                    <p class="subemail">taylorbonnie.m@gmail.com</p>
+                </div>
             </div>
         </div>
         
-        <div class="image">
-            <a href="https://www.instagram.com/btaylor_mediartist/"><img src="instagram_logo.png"></a>
+            <div class="row4">
+                <div class="column4">
+                    
+                <div class="image">
+                    <a href="https://www.instagram.com/btaylor_mediartist/"><img src="instagram_logo.png"></a>
 
-            <a href="https://www.linkedin.com/in/bonnie-taylor-4441591a7/"><img src="linkedin_logo.png"></a>
+                    <a href="https://www.linkedin.com/in/bonnie-taylor-4441591a7/"><img src="linkedin_logo.png"></a>
+
+                </div>
+                </div>
+            </div>
             
-        </div>
+        
+            
         
     </body>
     
